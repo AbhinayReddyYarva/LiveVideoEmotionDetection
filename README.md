@@ -1,4 +1,4 @@
 # LiveVideoEmotionDetection
 To detect emotion in live video
 
-OutputGif.gif
+Sample Output/OutputGif.gif
