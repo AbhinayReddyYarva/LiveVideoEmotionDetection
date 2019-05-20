@@ -14,3 +14,5 @@ I have trained the model TrainEmotionsCNN.py with DataSet and saved the model an
 In LiveVideoEmotionDetection.py loded the model and weights before opening the web cam. Once web cam is opened taking one frame per second and cropping the image to only face part using opencv haarcascade_frontalface_default.xml. Send the cropped image to predict the output. Below is the cropped image from video which sent to model to predict.
 
 ![](Abi.jpg)
+
+![](video.avi)
