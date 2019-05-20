@@ -12,7 +12,4 @@ For Data set creation using web cam go ahead and check out https://github.com/Ab
 I have trained the model TrainEmotionsCNN.py with DataSet and saved the model and weights using keras.models.model_from_json as odel in JsonModel.json and weights in JsonModel.h5 files and also in YAML as well using keras.models.model_from_yaml. 
 
 In LiveVideoEmotionDetection.py loded the model and weights before opening the web cam. Once web cam is opened taking one frame per second and cropping the image to only face part using opencv haarcascade_frontalface_default.xml. Send the cropped image to predict the output. Below is the cropped image from video which sent to model to predict.
-
 ![](Abi.jpg)
-
-![](video.avi)
