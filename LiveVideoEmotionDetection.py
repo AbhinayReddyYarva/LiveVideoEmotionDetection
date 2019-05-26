@@ -59,7 +59,7 @@ while True:
         gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
         faces = face_cascade.detectMultiScale(gray, 1.3, 5)
         for (x,y,w,h) in faces:
-            cv2.rectangle(img, (x,y), (x+w, y+h), (0,255,0), 5)  #2 is width of the line 
+            cv2.rectangle(img, (x,y), (x+w, y+h), (0,255,0), 2)  #2 is width of the line 
             roi_gray = gray[y:y+h, x:x+w]
             roi_color = img[y:y+h, x:x+w]
             crop_img = img[y:y+h, x:x+w]
@@ -87,7 +87,7 @@ while True:
         print(prediction)
     
         #Write text on the rectanguler box.
-        cv2.putText(img, prediction, (x, y-10), font, 0.8, (0, 0, 255), 3, cv2.LINE_AA)
+        cv2.putText(img, prediction, (x, y-10), font, 0.8, (0, 255, 0), 3, cv2.LINE_AA)
         out.write(img)
         
     cv2.imshow('img',img)
