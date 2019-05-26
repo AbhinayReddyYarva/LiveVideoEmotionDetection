@@ -5,6 +5,7 @@ Check out the below predicted output sample
 ![](SampleOutput/OutputGif.gif)
 
 Updated code output
+
 ![](OutputGif.gif)
 
 I have trained my model with Happy, Neutral and Anger. Usinging opencv haarcascade_frontalface_default.xml created the data set and trained the model. This is because to neglect the back ground and train the model with good accuracy. 
