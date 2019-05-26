@@ -66,11 +66,12 @@ while True:
         
         #pridicting with model 
         #converting ndarray to image
-        #test_image = Image.fromarray(img, 'RGB')
+        #test_image = image.fromarray(img, 'RGB')
+        #img_to_pass = image.array_to_img(crop_img)
         filename ="Abi.jpg"
         cv2.imwrite(filename, crop_img)
         cv2.imshow('crop_img',crop_img)
-        #with open('vijay.jpg', 'wb') as f:
+        #with open('Abi.jpg', 'wb') as f:
             #f.write(img)
         test_image = image.load_img("Abi.jpg", target_size = (64, 64))
         test_image = image.img_to_array(test_image)
@@ -86,7 +87,7 @@ while True:
         print(prediction)
     
         #Write text on the rectanguler box.
-        cv2.putText(img, prediction, (286, 104), font, 0.8, (0, 0, 255), 3, cv2.LINE_AA)
+        cv2.putText(img, prediction, (x, y-10), font, 0.8, (0, 0, 255), 3, cv2.LINE_AA)
         out.write(img)
         
     cv2.imshow('img',img)
